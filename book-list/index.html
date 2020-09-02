@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link rel="icon" type="icon\png" href="./icon.png">
+    <title>Book Lists</title>
+</head>
+<style>
+    input::-webkit-outer-spin-button,
+    input::-webkit-inner-spin-button {
+        -webkit-appearance: none;
+        margin: 0;
+    }
+    a:hover{
+        text-decoration: none;
+    }
+</style>
+<body>
+    
+    <div class="container">
+        <h1>Add Book</h1>
+        <form id="book-form">
+            <div class="form-group">
+                <label class="font-weight-bold" for="title">Title</label>
+                <input type="text" id="title" class="form-control">
+            </div>
+            <div class="form-group">
+                <label class="font-weight-bold" for="author">Author</label>
+                <input type="text" id="author" class="form-control">
+            </div>
+            <div class="form-group">
+                <label class="font-weight-bold" for="isbn">ISBN</label>
+                <input type="text" id="isbn" class="form-control">
+            </div>
+            <div>
+                <input class="btn btn-info btn-lg btn-block mt-4 mb-4 pt-1 pb-1" type="submit" value="Submit">
+            </div>
+        </form>
+        <hr>
+        <table class="table">
+            <thead>
+                <tr>
+                    <th>Title</th>
+                    <th>Author</th>
+                    <th>ISBN</th>
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody id="book-list">
+
+            </tbody>
+        </table>
+    </div>
+
+    <!-- <script src="./appES5.js"></script> -->
+    <script src="./appES6.js"></script>
+</body>
+</html>
